@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <PreferenceCategory
+        android:order="101"
+        android:title="general settings">
+
+        <CheckBoxPreference
+            android:defaultValue="true"
+
+            android:key="viewimages"
+            android:summaryOff="تصاویر نمایش داده نمیشود"
+            android:summaryOn="تصاویر نمایش داده میشود"
+            android:title="View Images" />
+
+        <SwitchPreference
+            android:defaultValue="true"
+            android:key="notif"
+            android:summaryOff="مزاحمت نمیشم"
+            android:summaryOn="اگر خبر مهمی بود اطاع میدم"
+            android:title="notificatoin" />
+
+        <RingtonePreference
+            android:title="Notification tone"
+            android:key="notification_tone"/>
+        <ListPreference
+            android:defaultValue="true"
+            android:entries="@array/pref_list_entry"
+            android:entryValues="@array/pref_list_values"
+            android:key="listpref"
+            android:summary="رشته دانشگاهی خودت را وارد کن"
+            android:title="رشته دانشگاهی" />
+
+    </PreferenceCategory>
+    <PreferenceCategory
+        android:order="102"
+        android:title="User">
+
+        <EditTextPreference
+            android:defaultValue="Default value"
+            android:inputType="textPersonName"
+            android:key="username"
+            android:selectAllOnFocus="true"
+            android:singleLine="true"
+            android:summary="نام کاربری خود را وارد کنید"
+            android:title="username" />
+        <MultiSelectListPreference
+
+            android:entries="@array/pref_list_entry"
+            android:entryValues="@array/pref_list_values"
+            android:key="multilistpref"
+
+            android:title="رشته دانشگاهی" />
+
+        <EditTextPreference
+            android:defaultValue="Default value"
+            android:key="userbio"
+            android:maxLines="3"
+            android:maxLength="300"
+            android:selectAllOnFocus="true"
+            android:singleLine="false"
+            android:summary="خودت را معرفی کن"
+            android:title="bio" />
+    </PreferenceCategory>
+</PreferenceScreen>

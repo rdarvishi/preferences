@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">preferences</string>
+    
+
+        <string-array name="pref_list_entry">
+            <item>مهندسی صنایع</item>
+            <item>مهندسی برق</item>
+            <item>مهندسی معدن</item>
+            <item>مهندسی آب</item>
+            <item>مهندسی نفت</item>
+
+        </string-array>
+
+    <string-array name="pref_list_values">
+        <item> sanaye</item>
+        <item>bargh</item>
+        <item>madan</item>
+        <item>ab</item>
+        <item>naft</item>
+
+    </string-array>
+</resources>
